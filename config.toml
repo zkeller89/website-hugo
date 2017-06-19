@@ -1,0 +1,51 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Zack"
+theme = "hugo-xmin"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/zkeller89"
+    weight = 3
+[[menu.main]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/zrkeller/"
+    weight = 4
+
+[params]
+    description = "Zack's Website"
+    
+    # path relative to static folder
+    favicon = "img/favicon.png"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
